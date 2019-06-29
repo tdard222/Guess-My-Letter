@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <script type="text/javascript">
+    var MyletterChoice = ["q", "w", "d", "r", "t", "y","u", "i", "o", "g"]
+        document.onkeyup = function() {
+            var userguess = string.MyletterChoice(event.keyCode)
+            toLowerCase();
+            console.log(userguess);
+
+            var computerGuess = MyletterChoice[Math.floor(Math.random()*MyletterChoice.length)];
+            console.log(computerGuess);
+        }
+        </script>
+    
+    <h1>Are you Psychic?</h1>
+
+    <div>Lets play a game and Test your psychic abilites. Guess what letter I'm thinking of.</div>
+
+    <p>Wins: <span id="wins">0</span></p>
+
+    <p>losses: <span id="losses">0</span></p>
+
+    <p>Guesses Left: <span id="guessesLeft">0</span></p>
+
+
+    <p>Your Guesses so far: <span id="guessesSofar">0</span></p>
+
+
+    <script type="text/javascript" src="assests/javascript/game.js"></script>
+
+
+    
+</body> 
+
+
+</html>
